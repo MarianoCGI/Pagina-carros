@@ -1,5 +1,6 @@
 import { Component,Input } from '@angular/core';
 import { Busqueda } from '../busqueda.model';
+import { BusquedaService } from '../busqueda.service';
 
 interface BusRes {
   carros: Busqueda[];

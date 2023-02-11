@@ -17,15 +17,16 @@
   rowHeight="20rem" gutterSize="1.5rem">
 
 
-  <div *ngFor="let dog of criteriaListenedFromExternalComponent.carros">
-    <mat-grid-tile><img height="100%" [src]="dog.image_link"></mat-grid-tile>
+  <div *ngFor="let car of criteriaListenedFromExternalComponent.carros">
+
     <mat-grid-tile>
       <div class="texto">
-
-        <h1>{{dog.name}}</h1>
+        <h1>{{car.model}}</h1>
       <hr>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem voluptates illo nihil esse maxime velit, nam dicta repellendus harum possimus blanditiis sequi rem cum voluptatibus ipsum minima tempore sed laboriosam!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem voluptates illo nihil esse maxime velit, nam dicta repellendus harum possimus blanditiis sequi rem cum voluptatibus ipsum minima tempore sed laboriosam!</p>
+      <h1>Año de fabricación: {{car.year}}</h1>
+      <h1>Cantidad de cilindros: {{car.cylinders}}</h1>
+      <h1>Fabricante: {{car.make}}</h1>
+      <h1>fuel_type: {{car.fuel_type}}</h1>
       </div>
     </mat-grid-tile>
   </div>

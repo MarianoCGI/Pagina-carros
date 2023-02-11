@@ -22,7 +22,7 @@ export class BusquedaService {
 
   getCarsCylinders(){
     this.loading.next(true)
-    this.http.get<Busqueda[]>("https://api.api-ninjas.com/v1/cars?cylinders=6", {headers: this.header})
+    this.http.get<Busqueda[]>("https://api.api-ninjas.com/v1/cars?cylinders=12", {headers: this.header})
       .subscribe((result)=>{
         this.busqueda = result;
         this.busquedaResults.next([...this.busqueda]);
@@ -34,7 +34,7 @@ export class BusquedaService {
   }
   getCarromasactual(){
     this.loading.next(true)
-    this.http.get<Busqueda[]>("https://api.api-ninjas.com/v1/cars?year=1996", {headers: this.header})
+    this.http.get<Busqueda[]>("https://api.api-ninjas.com/v1/cars?year=2022", {headers: this.header})
       .subscribe((result)=>{
         console.log('buscando')
         this.busqueda = result;
